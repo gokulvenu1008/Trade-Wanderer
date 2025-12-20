@@ -2,46 +2,46 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 
 const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-    return (
-        <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-            <div className="container nav-content">
-                <div className="logo">
-                    <span className="text-gold">TRADE</span> WANDERER
-                </div>
+  return (
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="container nav-content">
+        <div className="logo">
+          <span className="text-gold">TRADE</span> WANDERER
+        </div>
 
-                <div className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
-                    <a href="#home" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
-                    <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>About</a>
-                    <a href="#course" onClick={() => setIsMobileMenuOpen(false)}>Course</a>
-                    <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
-                    <button className="close-menu" onClick={() => setIsMobileMenuOpen(false)}>
-                        <X size={24} />
-                    </button>
-                </div>
+        <div className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
+          <a href="#home" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
+          <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>About</a>
+          <a href="#course" onClick={() => setIsMobileMenuOpen(false)}>Course</a>
+          <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+          <button className="close-menu" onClick={() => setIsMobileMenuOpen(false)}>
+            <X size={24} />
+          </button>
+        </div>
 
-                <div className="nav-actions">
-                    <a href="https://wa.me/" className="btn-primary flex-center">
-                        <Phone size={18} style={{ marginRight: '8px' }} />
-                        Book Now
-                    </a>
-                    <button className="mobile-toggle" onClick={() => setIsMobileMenuOpen(true)}>
-                        <Menu size={24} color="white" />
-                    </button>
-                </div>
-            </div>
+        <div className="nav-actions">
+          <a href="https://wa.me/+917306593906" className="btn-primary flex-center">
+            <Phone size={18} style={{ marginRight: '8px' }} />
+            Book Now
+          </a>
+          <button className="mobile-toggle" onClick={() => setIsMobileMenuOpen(true)}>
+            <Menu size={24} color="white" />
+          </button>
+        </div>
+      </div>
 
-            <style>{`
+      <style>{`
         .navbar {
           position: fixed;
           top: 0;
@@ -150,8 +150,8 @@ const Navbar = () => {
           }
         }
       `}</style>
-        </nav>
-    );
+    </nav>
+  );
 };
 
 export default Navbar;
