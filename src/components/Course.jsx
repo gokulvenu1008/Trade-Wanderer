@@ -26,7 +26,7 @@ const Course = () => {
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
-                <span>Trading Setup (Gold)</span>
+                <span>Trading Setup</span>
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
@@ -68,11 +68,11 @@ const Course = () => {
             <ul className="course-features">
               <li>
                 <CheckCircle size={20} className="check-icon" />
-                <span>Personal 1-on-1 Training</span>
+                <span>Personal Guidance</span>
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
-                <span>XAUUSD(Gold) Strategy Included</span>
+                <span>Real-time 1-on-1 Feedback</span>
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
