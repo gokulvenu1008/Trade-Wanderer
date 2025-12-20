@@ -16,7 +16,6 @@ const Course = () => {
             <div className="price-box">
               <span className="currency">₹</span>
               <span className="amount">3000</span>
-              <span className="period">/ lifetime</span>
             </div>
 
             <ul className="course-features">
@@ -26,7 +25,7 @@ const Course = () => {
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
-                <span>Personal Trading Setup (Gold)</span>
+                <span>Trading Setup (Gold)</span>
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
@@ -34,11 +33,11 @@ const Course = () => {
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
-                <span>Lifetime Community Access & Updates</span>
+                <span>Lifetime Community Access</span>
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
-                <span>1-on-1 Personal Mentorship</span>
+                <span>24/7 Whatsapp Support</span>
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
@@ -55,14 +54,13 @@ const Course = () => {
 
           <div className="pricing-card">
             <div className="card-header">
-              <h2>Personal 1-on-1 Mentorship</h2>
+              <h2>1-on-1 Mentorship</h2>
               <p>Ultimate personalized learning experience</p>
             </div>
 
             <div className="price-box">
               <span className="currency">₹</span>
               <span className="amount">7000</span>
-              <span className="period">/ lifetime</span>
             </div>
 
             <ul className="course-features">
@@ -81,6 +79,10 @@ const Course = () => {
               <li>
                 <CheckCircle size={20} className="check-icon" />
                 <span>Lifetime Community Access</span>
+              </li>
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>24/7 Whatsapp Support</span>
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />

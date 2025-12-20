@@ -24,6 +24,7 @@ const Navbar = () => {
           <a href="#home" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
           <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>About</a>
           <a href="#course" onClick={() => setIsMobileMenuOpen(false)}>Course</a>
+          <a href="#reviews" onClick={() => setIsMobileMenuOpen(false)}>Reviews</a>
           <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
           <button className="close-menu" onClick={() => setIsMobileMenuOpen(false)}>
             <X size={24} />
