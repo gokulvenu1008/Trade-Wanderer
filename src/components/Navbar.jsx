@@ -148,6 +148,12 @@ const Navbar = () => {
             top: 20px;
             right: 20px;
           }
+
+          .nav-actions .btn-primary {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+          }
         }
       `}</style>
     </nav>

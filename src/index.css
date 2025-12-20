@@ -8,10 +8,10 @@
   --gold-secondary: #dbb400;
   --gold-gradient: linear-gradient(135deg, #FFD700 0%, #FDB931 100%);
   --gold-glow: 0 0 20px rgba(255, 215, 0, 0.3);
-  
+
   /* Fonts */
   --font-sans: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  
+
   /* Spacing */
   --container-width: 1200px;
   --section-padding: 80px 20px;
@@ -44,7 +44,12 @@ button {
 }
 
 /* Typography Tools */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
   font-weight: 700;
 }
@@ -75,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-size: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -88,8 +94,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { User, TrendingUp, Award } from 'lucide-react';
+import profilePic from '../assets/profile pic.jpg';
 
 const About = () => {
   return (
@@ -32,7 +33,7 @@ const About = () => {
           <div className="founders-card-container">
             <div className="founder-card">
               <div className="founder-image-placeholder">
-                <User size={64} color="#555" />
+                <img src={profilePic} alt="Gokul V & Vinaya R" className="founder-img" />
               </div>
               <div className="founder-info">
                 <h3>Gokul V & VINAYA R</h3>
@@ -139,6 +140,13 @@ const About = () => {
           align-items: center;
           justify-content: center;
           border: 2px solid var(--gold-primary);
+          overflow: hidden;
+        }
+
+        .founder-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .founder-info h3 {
