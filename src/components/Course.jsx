@@ -62,7 +62,7 @@ const Course = () => {
             <div className="price-box">
               <span className="currency">₹</span>
               <span className="amount">5000</span>
-              <span className="original-price">₹8000</span>
+              <span className="original-price">₹10000</span>
             </div>
 
             <ul className="course-features">
