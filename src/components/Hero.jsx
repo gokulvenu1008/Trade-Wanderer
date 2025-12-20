@@ -2,35 +2,35 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
-    return (
-        <section id="home" className="hero-section">
-            <div className="container hero-content">
-                <div className="hero-text animate-fade-in">
-                    <h1 className="hero-title">
-                        Create Real, <br />
-                        <span className="text-gradient">Profitable Traders</span>
-                    </h1>
-                    <p className="hero-subtitle">
-                        Not just another signal group. We deliver practical, no-nonsense training
-                        that works in real market conditions. Master Gold (XAUUSD) & Global Forex markets.
-                    </p>
-                    <div className="hero-actions">
-                        <a href="#course" className="btn-primary flex-center">
-                            Join Beginner Batch <ArrowRight size={18} style={{ marginLeft: '8px' }} />
-                        </a>
-                        <a href="#about" className="btn-outline">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-            </div>
+  return (
+    <section id="home" className="hero-section">
+      <div className="container hero-content">
+        <div className="hero-text animate-fade-in">
+          <h1 className="hero-title">
+            Create Real, <br />
+            <span className="text-gradient">Profitable Traders</span>
+          </h1>
+          <p className="hero-subtitle">
+            Not just another signal group. We deliver practical, ICT Concept training
+            that works in real market conditions. Master Gold (XAUUSD) & Global Forex markets.
+          </p>
+          <div className="hero-actions">
+            <a href="#course" className="btn-primary flex-center">
+              Join Beginner Batch <ArrowRight size={18} style={{ marginLeft: '8px' }} />
+            </a>
+            <a href="#about" className="btn-outline">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
 
-            <div className="hero-background">
-                <div className="gradient-sphere"></div>
-                <div className="grid-overlay"></div>
-            </div>
+      <div className="hero-background">
+        <div className="gradient-sphere"></div>
+        <div className="grid-overlay"></div>
+      </div>
 
-            <style>{`
+      <style>{`
         .hero-section {
           position: relative;
           min-height: 100vh;
@@ -130,8 +130,8 @@ const Hero = () => {
           }
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Hero;
