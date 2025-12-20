@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight, Instagram, Send } from 'lucide-react';
 
+import instagramIcon from '../assets/instagram icon.jpg';
+
 const Hero = () => {
   return (
     <section id="home" className="hero-section">
@@ -11,8 +13,8 @@ const Hero = () => {
             <span className="text-gradient">Profitable Traders</span>
           </h1>
           <p className="hero-subtitle">
-            Not just another signal group. We deliver practical, ICT Concept training
-            that works in real market conditions. Master Gold (XAUUSD) & Global Forex markets.
+            We don’t sell signals — we build independent, profitable traders.
+            Not a signal group or theory overload. We deliver practical ICT trading education that helps you understand price action and execute confidently in real market conditions, focusing on Gold (XAUUSD) and Global Forex markets.
           </p>
           <div className="hero-actions">
             <a href="#course" className="btn-primary flex-center">
@@ -28,7 +30,7 @@ const Hero = () => {
           <div className="instagram-card">
             <div className="insta-header">
               <div className="insta-icon-wrapper">
-                <Instagram size={40} className="text-gold" />
+                <img src={instagramIcon} alt="Instagram" className="insta-icon-img" />
               </div>
               <div className="insta-info">
                 <h3>Trade Wanderer</h3>
@@ -41,11 +43,6 @@ const Hero = () => {
                 <span className="stat-value">Daily</span>
                 <span className="stat-label">Analysis</span>
               </div>
-              <div className="stat-divider"></div>
-              <div className="stat-item">
-                <span className="stat-value">Live</span>
-                <span className="stat-label">Mentorship</span>
-              </div>
             </div>
 
             <p className="insta-desc">
@@ -53,10 +50,10 @@ const Hero = () => {
             </p>
 
             <div className="social-actions">
-              <a href="https://instagram.com/tradewanderer" target="_blank" rel="noopener noreferrer" className="btn-social btn-insta">
+              <a href="https://instagram.com/trade_wanderer" target="_blank" rel="noopener noreferrer" className="btn-social btn-insta">
                 <Instagram size={18} /> Instagram
               </a>
-              <a href="https://t.me/tradewanderer" target="_blank" rel="noopener noreferrer" className="btn-social btn-telegram">
+              <a href="https://t.me/+ZTAvOEFslrxlZDE9" target="_blank" rel="noopener noreferrer" className="btn-social btn-telegram">
                 <Send size={18} /> Telegram
               </a>
             </div>
@@ -147,11 +144,15 @@ const Hero = () => {
         .insta-icon-wrapper {
           width: 60px;
           height: 60px;
-          background: rgba(212, 175, 55, 0.1);
           border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          overflow: hidden;
+          border: 2px solid var(--gold-primary);
+        }
+
+        .insta-icon-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
 
         .insta-info h3 {
