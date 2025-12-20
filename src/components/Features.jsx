@@ -2,46 +2,46 @@ import React from 'react';
 import { MonitorPlay, UserCheck, Crosshair, Brain } from 'lucide-react';
 
 const features = [
-    {
-        icon: <MonitorPlay size={40} />,
-        title: "Live Trading Sessions",
-        desc: "every week. Watch us trade live and learn execution in real-time."
-    },
-    {
-        icon: <UserCheck size={40} />,
-        title: "Personalized Mentorship",
-        desc: "1-on-1 guidance & trade reviews to correct your mistakes."
-    },
-    {
-        icon: <Crosshair size={40} />,
-        title: "XAUUSD Focus",
-        desc: "Specialized strategies for Gold & Major Forex Pairs."
-    },
-    {
-        icon: <Brain size={40} />,
-        title: "Psychology Mastery",
-        desc: "Master the mental game with our Risk Management frameworks."
-    }
+  {
+    icon: <MonitorPlay size={40} />,
+    title: "Live Trading Sessions",
+    desc: "Watch us trade live and learn execution in real-time."
+  },
+  {
+    icon: <UserCheck size={40} />,
+    title: "Personalized Mentorship",
+    desc: "1-on-1 guidance & trade reviews to correct your mistakes."
+  },
+  {
+    icon: <Crosshair size={40} />,
+    title: "XAUUSD Focus",
+    desc: "Specialized strategies for Gold & Major Forex Pairs."
+  },
+  {
+    icon: <Brain size={40} />,
+    title: "Psychology Mastery",
+    desc: "Master the mental game with our Risk Management frameworks."
+  }
 ];
 
 const Features = () => {
-    return (
-        <section className="section">
-            <div className="container">
-                <div className="features-grid">
-                    {features.map((feature, index) => (
-                        <div key={index} className="feature-card">
-                            <div className="icon-wrapper">
-                                {feature.icon}
-                            </div>
-                            <h3>{feature.title}</h3>
-                            <p>{feature.desc}</p>
-                        </div>
-                    ))}
-                </div>
+  return (
+    <section className="section">
+      <div className="container">
+        <div className="features-grid">
+          {features.map((feature, index) => (
+            <div key={index} className="feature-card">
+              <div className="icon-wrapper">
+                {feature.icon}
+              </div>
+              <h3>{feature.title}</h3>
+              <p>{feature.desc}</p>
             </div>
+          ))}
+        </div>
+      </div>
 
-            <style>{`
+      <style>{`
         .features-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -84,8 +84,8 @@ const Features = () => {
           font-size: 0.95rem;
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Features;

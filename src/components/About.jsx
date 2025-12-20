@@ -13,7 +13,7 @@ const About = () => {
               Founded by <strong>Gokul V & Vinaya R</strong>, full-time professional traders with a mission to create profitable, independent traders.
             </p>
             <p className="about-desc">
-              We don't sell dreams; we teach the reality of the markets. With proven results in global forex and commodity markets, our methodology focuses on Psychology, Risk Management, and Precision.
+              "Instead of chasing market myths, we master real-world mechanics through a disciplined focus on high-precision entries and professional risk management."
             </p>
 
             <div className="stats-grid">
@@ -36,7 +36,7 @@ const About = () => {
                 <img src={profilePic} alt="Gokul V & Vinaya R" className="founder-img" />
               </div>
               <div className="founder-info">
-                <h3>Gokul V & VINAYA R</h3>
+                <h3>Gokul V & Vinaya R</h3>
                 <p className="founder-role">Professional Traders</p>
                 <div className="divider"></div>
                 <p className="founder-bio">Specialists in Gold (XAUUSD) & Major Forex Pairs.</p>
@@ -104,30 +104,30 @@ const About = () => {
         }
 
         .founder-card {
-          background: #1a1a24;
-          padding: 30px;
-          border-radius: 20px;
+          background: rgba(20, 20, 25, 0.6);
+          backdrop-filter: blur(20px);
+          border: 1px solid var(--gold-primary);
+          padding: 32px;
+          border-radius: 24px;
           width: 100%;
           max-width: 400px;
           text-align: center;
-          border: 1px solid rgba(255, 215, 0, 0.1);
-          box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-          position: relative;
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 
+                      0 0 30px rgba(212, 175, 55, 0.1);
+          transform: rotateY(-10deg) rotateX(5deg);
+          transition: transform 0.4s ease;
+          animation: float 6s ease-in-out infinite;
+          perspective: 1000px;
         }
 
-        /* Gold Glow effect */
-        .founder-card::before {
-          content: '';
-          position: absolute;
-          inset: -1px;
-          border-radius: 20px;
-          padding: 1px;
-          background: linear-gradient(45deg, transparent, var(--gold-primary), transparent);
-          -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-          -webkit-mask-composite: xor;
-          mask-composite: exclude;
-          pointer-events: none;
+        .founder-card:hover {
+          transform: rotateY(0) rotateX(0) translateY(-10px);
+        }
+
+        @keyframes float {
+          0% { transform: rotateY(-10deg) rotateX(5deg) translateY(0px); }
+          50% { transform: rotateY(-10deg) rotateX(5deg) translateY(-15px); }
+          100% { transform: rotateY(-10deg) rotateX(5deg) translateY(0px); }
         }
 
         .founder-image-placeholder {
@@ -173,6 +173,11 @@ const About = () => {
         @media (max-width: 768px) {
           .about-grid {
             grid-template-columns: 1fr;
+          }
+          
+          .founder-card {
+            transform: none !important;
+            animation: none !important;
           }
         }
       `}</style>

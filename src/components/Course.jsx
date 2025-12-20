@@ -16,6 +16,7 @@ const Course = () => {
             <div className="price-box">
               <span className="currency">₹</span>
               <span className="amount">3000</span>
+              <span className="original-price">₹5000</span>
             </div>
 
             <ul className="course-features">
@@ -60,7 +61,8 @@ const Course = () => {
 
             <div className="price-box">
               <span className="currency">₹</span>
-              <span className="amount">7000</span>
+              <span className="amount">5000</span>
+              <span className="original-price">₹8000</span>
             </div>
 
             <ul className="course-features">
@@ -70,11 +72,11 @@ const Course = () => {
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
-                <span>Full Basics Training</span>
+                <span>XAUUSD(Gold) Strategy Included</span>
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
-                <span>XAUUSD(Gold) Strategy Included</span>
+                <span>Personal Trading Setup</span>
               </li>
               <li>
                 <CheckCircle size={20} className="check-icon" />
@@ -152,18 +154,30 @@ const Course = () => {
         .price-box {
           text-align: center;
           margin-bottom: 40px;
-          color: var(--gold-primary);
+          color: white;
+          display: flex;
+          align-items: baseline;
+          justify-content: center;
+          gap: 12px;
         }
 
         .currency {
           font-size: 2rem;
-          vertical-align: top;
+          font-weight: 600;
         }
 
         .amount {
           font-size: 4rem;
           font-weight: 800;
           line-height: 1;
+        }
+
+        .original-price {
+          color: var(--text-secondary);
+          text-decoration: line-through;
+          font-size: 1.5rem;
+          font-weight: 600;
+          opacity: 0.6;
         }
 
         .period {

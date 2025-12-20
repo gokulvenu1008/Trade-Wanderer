@@ -43,6 +43,11 @@ const Hero = () => {
                 <span className="stat-value">Daily</span>
                 <span className="stat-label">Analysis</span>
               </div>
+              <div className="stat-divider"></div>
+              <div className="stat-item">
+                <span className="stat-value">Trading</span>
+                <span className="stat-label">Views</span>
+              </div>
             </div>
 
             <p className="insta-desc">
@@ -117,7 +122,7 @@ const Hero = () => {
         .instagram-card {
           background: rgba(20, 20, 25, 0.6);
           backdrop-filter: blur(20px);
-          border: 1px solid rgba(212, 175, 55, 0.2);
+          border: 1px solid var(--gold-primary);
           border-radius: 24px;
           padding: 32px;
           width: 100%;
@@ -131,7 +136,6 @@ const Hero = () => {
 
         .instagram-card:hover {
           transform: rotateY(0) rotateX(0) translateY(-10px);
-          border-color: var(--gold-primary);
         }
 
         .insta-header {
