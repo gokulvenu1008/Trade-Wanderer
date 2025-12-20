@@ -2,50 +2,50 @@ import React from 'react';
 import { User, TrendingUp, Award } from 'lucide-react';
 
 const About = () => {
-    return (
-        <section id="about" className="section bg-secondary">
-            <div className="container">
-                <div className="about-grid">
-                    <div className="about-content">
-                        <h2 className="section-title">Led by <span className="text-gold">Experts</span></h2>
-                        <p className="about-lead">
-                            Founded by <strong>Gokul V & VINAYA R</strong>, full-time professional traders with a mission to create profitable, independent traders.
-                        </p>
-                        <p className="about-desc">
-                            We don't sell dreams; we teach the reality of the markets. With proven results in global forex and commodity markets, our methodology focuses on Psychology, Risk Management, and Precision.
-                        </p>
+  return (
+    <section id="about" className="section bg-secondary">
+      <div className="container">
+        <div className="about-grid">
+          <div className="about-content">
+            <h2 className="section-title">Led by <span className="text-gold">Experts</span></h2>
+            <p className="about-lead">
+              Founded by <strong>Gokul V & Vinaya R</strong>, full-time professional traders with a mission to create profitable, independent traders.
+            </p>
+            <p className="about-desc">
+              We don't sell dreams; we teach the reality of the markets. With proven results in global forex and commodity markets, our methodology focuses on Psychology, Risk Management, and Precision.
+            </p>
 
-                        <div className="stats-grid">
-                            <div className="stat-card">
-                                <TrendingUp className="text-gold" size={32} />
-                                <h3>Proven</h3>
-                                <p>Results</p>
-                            </div>
-                            <div className="stat-card">
-                                <Award className="text-gold" size={32} />
-                                <h3>Pro</h3>
-                                <p>Mentorship</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="founders-card-container">
-                        <div className="founder-card">
-                            <div className="founder-image-placeholder">
-                                <User size={64} color="#555" />
-                            </div>
-                            <div className="founder-info">
-                                <h3>Gokul V & VINAYA R</h3>
-                                <p className="founder-role">Professional Signal Traders</p>
-                                <div className="divider"></div>
-                                <p className="founder-bio">Specialists in Gold (XAUUSD) & Major Forex Pairs.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="stats-grid">
+              <div className="stat-card">
+                <TrendingUp className="text-gold" size={32} />
+                <h3>Proven</h3>
+                <p>Results</p>
+              </div>
+              <div className="stat-card">
+                <Award className="text-gold" size={32} />
+                <h3>Pro</h3>
+                <p>Mentorship</p>
+              </div>
             </div>
+          </div>
 
-            <style>{`
+          <div className="founders-card-container">
+            <div className="founder-card">
+              <div className="founder-image-placeholder">
+                <User size={64} color="#555" />
+              </div>
+              <div className="founder-info">
+                <h3>Gokul V & VINAYA R</h3>
+                <p className="founder-role">Professional Signal Traders</p>
+                <div className="divider"></div>
+                <p className="founder-bio">Specialists in Gold (XAUUSD) & Major Forex Pairs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>{`
         .bg-secondary {
           background-color: var(--bg-secondary);
         }
@@ -168,8 +168,8 @@ const About = () => {
           }
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default About;
