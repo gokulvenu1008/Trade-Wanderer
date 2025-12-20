@@ -2,63 +2,107 @@ import React from 'react';
 import { CheckCircle, Zap } from 'lucide-react';
 
 const Course = () => {
-    return (
-        <section id="course" className="section">
-            <div className="container">
-                <div className="pricing-card-wrapper">
-                    <div className="pricing-card">
-                        <div className="popular-badge">Most Popular</div>
-                        <div className="card-header">
-                            <h2>Beginner Batch</h2>
-                            <p>The complete foundation for profitable trading</p>
-                        </div>
-
-                        <div className="price-box">
-                            <span className="currency">₹</span>
-                            <span className="amount">3000</span>
-                            <span className="period">/ lifetime</span>
-                        </div>
-
-                        <ul className="course-features">
-                            <li>
-                                <CheckCircle size={20} className="check-icon" />
-                                <span>ICT Concepts - Basic to Advanced</span>
-                            </li>
-                            <li>
-                                <CheckCircle size={20} className="check-icon" />
-                                <span>Personal Trading Setup (Gold)</span>
-                            </li>
-                            <li>
-                                <CheckCircle size={20} className="check-icon" />
-                                <span>Live Training Sessions</span>
-                            </li>
-                            <li>
-                                <CheckCircle size={20} className="check-icon" />
-                                <span>Lifetime Community Access & Updates</span>
-                            </li>
-                            <li>
-                                <CheckCircle size={20} className="check-icon" />
-                                <span>1-on-1 Personal Mentorship</span>
-                            </li>
-                            <li>
-                                <CheckCircle size={20} className="check-icon" />
-                                <span>Risk Management Strategy</span>
-                            </li>
-                        </ul>
-
-                        <a href="https://wa.me/" className="btn-primary full-width">
-                            Enroll Now <Zap size={18} style={{ marginLeft: '8px' }} />
-                        </a>
-
-                        <p className="guarantee-text">Limited seats available for next batch</p>
-                    </div>
-                </div>
+  return (
+    <section id="course" className="section">
+      <div className="container">
+        <div className="pricing-card-wrapper">
+          <div className="pricing-card">
+            <div className="popular-badge">Most Popular</div>
+            <div className="card-header">
+              <h2>Beginner Batch</h2>
+              <p>The complete foundation for profitable trading</p>
             </div>
 
-            <style>{`
+            <div className="price-box">
+              <span className="currency">₹</span>
+              <span className="amount">3000</span>
+              <span className="period">/ lifetime</span>
+            </div>
+
+            <ul className="course-features">
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>ICT Concepts - Basic to Advanced</span>
+              </li>
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>Personal Trading Setup (Gold)</span>
+              </li>
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>Live Training Sessions</span>
+              </li>
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>Lifetime Community Access & Updates</span>
+              </li>
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>1-on-1 Personal Mentorship</span>
+              </li>
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>Risk Management Strategy</span>
+              </li>
+            </ul>
+
+            <a href="https://wa.me/" className="btn-primary full-width">
+              Enroll Now <Zap size={18} style={{ marginLeft: '8px' }} />
+            </a>
+
+            <p className="guarantee-text">Limited seats available for next batch</p>
+          </div>
+
+          <div className="pricing-card">
+            <div className="card-header">
+              <h2>Personal 1-on-1 Mentorship</h2>
+              <p>Ultimate personalized learning experience</p>
+            </div>
+
+            <div className="price-box">
+              <span className="currency">₹</span>
+              <span className="amount">7000</span>
+              <span className="period">/ lifetime</span>
+            </div>
+
+            <ul className="course-features">
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>Personal 1-on-1 Training</span>
+              </li>
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>Full Basics Training</span>
+              </li>
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>XAUUSD(Gold) Strategy Included</span>
+              </li>
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>Lifetime Community Access</span>
+              </li>
+              <li>
+                <CheckCircle size={20} className="check-icon" />
+                <span>Risk Management Strategy</span>
+              </li>
+            </ul>
+
+            <a href="https://wa.me/" className="btn-primary full-width" style={{ marginTop: 'auto' }}>
+              Enroll Now <Zap size={18} style={{ marginLeft: '8px' }} />
+            </a>
+
+            <p className="guarantee-text">Exclusive mentorship slots</p>
+          </div>
+        </div>
+      </div>
+
+      <style>{`
         .pricing-card-wrapper {
           display: flex;
           justify-content: center;
+          gap: 40px;
+          flex-wrap: wrap;
           padding: 40px 0;
         }
 
@@ -67,10 +111,12 @@ const Course = () => {
           border-radius: 24px;
           padding: 50px;
           width: 100%;
-          max-width: 500px;
+          max-width: 450px;
           position: relative;
           border: 1px solid rgba(255, 215, 0, 0.15);
           box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+          display: flex;
+          flex-direction: column;
         }
 
         .popular-badge {
@@ -158,8 +204,8 @@ const Course = () => {
           opacity: 0.7;
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Course;
