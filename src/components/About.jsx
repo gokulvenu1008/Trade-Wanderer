@@ -37,7 +37,7 @@ const About = () => {
               </div>
               <div className="founder-info">
                 <h3>Gokul V & VINAYA R</h3>
-                <p className="founder-role">Professional Signal Traders</p>
+                <p className="founder-role">Professional Traders</p>
                 <div className="divider"></div>
                 <p className="founder-bio">Specialists in Gold (XAUUSD) & Major Forex Pairs.</p>
               </div>

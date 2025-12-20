@@ -2,69 +2,69 @@ import React from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
-    return (
-        <section id="contact" className="contact-section">
-            <div className="container">
-                <h2 className="section-title text-center">Get in <span className="text-gold">Touch</span></h2>
-                <p className="section-subtitle text-center">
-                    Have questions? We're here to help you start your trading journey.
-                </p>
+  return (
+    <section id="contact" className="contact-section">
+      <div className="container">
+        <h2 className="section-title text-center">Get in <span className="text-gold">Touch</span></h2>
+        <p className="section-subtitle text-center">
+          Have questions? We're here to help you start your trading journey.
+        </p>
 
-                <div className="contact-content">
-                    <div className="contact-info">
-                        <div className="info-card">
-                            <div className="icon-box">
-                                <Phone size={24} />
-                            </div>
-                            <div>
-                                <h3>Call Us</h3>
-                                <p>+91 73065 93906</p>
-                            </div>
-                        </div>
-
-                        <div className="info-card">
-                            <div className="icon-box">
-                                <Mail size={24} />
-                            </div>
-                            <div>
-                                <h3>Email Us</h3>
-                                <p>support@tradewanderer.com</p>
-                            </div>
-                        </div>
-
-                        <div className="info-card">
-                            <div className="icon-box">
-                                <MapPin size={24} />
-                            </div>
-                            <div>
-                                <h3>Location</h3>
-                                <p>Kerala, India</p>
-                            </div>
-                        </div>
-
-                        <div className="social-links">
-                            {/* Add social links if needed later */}
-                        </div>
-                    </div>
-
-                    <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-                        <div className="form-group">
-                            <input type="text" placeholder="Your Name" required />
-                        </div>
-                        <div className="form-group">
-                            <input type="email" placeholder="Your Email" required />
-                        </div>
-                        <div className="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" className="btn-primary">
-                            Send Message <Send size={18} style={{ marginLeft: '8px' }} />
-                        </button>
-                    </form>
-                </div>
+        <div className="contact-content">
+          <div className="contact-info">
+            <div className="info-card">
+              <div className="icon-box">
+                <Phone size={24} />
+              </div>
+              <div>
+                <h3>Call Us</h3>
+                <p>+91 73065 93906</p>
+              </div>
             </div>
 
-            <style>{`
+            <div className="info-card">
+              <div className="icon-box">
+                <Mail size={24} />
+              </div>
+              <div>
+                <h3>Email Us</h3>
+                <p>gokulv508g@gmail.com</p>
+              </div>
+            </div>
+
+            <div className="info-card">
+              <div className="icon-box">
+                <MapPin size={24} />
+              </div>
+              <div>
+                <h3>Location</h3>
+                <p>Kerala, India</p>
+              </div>
+            </div>
+
+            <div className="social-links">
+              {/* Add social links if needed later */}
+            </div>
+          </div>
+
+          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+            <div className="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div className="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div className="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" className="btn-primary">
+              Send Message <Send size={18} style={{ marginLeft: '8px' }} />
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <style>{`
         .contact-section {
           padding: 80px 0;
           background: linear-gradient(to bottom, #0a0a0a, #111);
@@ -161,8 +161,8 @@ const Contact = () => {
           }
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Contact;
