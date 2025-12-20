@@ -46,7 +46,7 @@ const Course = () => {
               </li>
             </ul>
 
-            <a href="https://wa.me/" className="btn-primary full-width">
+            <a href="https://wa.me/+917306593906" className="btn-primary full-width">
               Enroll Now <Zap size={18} style={{ marginLeft: '8px' }} />
             </a>
 
@@ -88,7 +88,7 @@ const Course = () => {
               </li>
             </ul>
 
-            <a href="https://wa.me/" className="btn-primary full-width" style={{ marginTop: 'auto' }}>
+            <a href="https://wa.me/+917306593906" className="btn-primary full-width" style={{ marginTop: 'auto' }}>
               Enroll Now <Zap size={18} style={{ marginLeft: '8px' }} />
             </a>
 
