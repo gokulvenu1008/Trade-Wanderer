@@ -12,25 +12,25 @@ const Contact = () => {
 
         <div className="contact-content">
           <div className="contact-info">
-            <div className="info-card">
+            <a href="tel:+917306593906" className="info-card" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '20px' }}>
               <div className="icon-box">
                 <Phone size={24} />
               </div>
               <div>
                 <h3>Call Us</h3>
-                <p><a href="tel:+917306593906" style={{ color: '#aaa', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseEnter={(e) => e.target.style.color = 'var(--gold-primary)'} onMouseLeave={(e) => e.target.style.color = '#aaa'}>+91 73065 93906</a></p>
+                <p>+91 73065 93906</p>
               </div>
-            </div>
+            </a>
 
-            <div className="info-card">
+            <a href="mailto:gokulv508g@gmail.com" className="info-card" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '20px' }}>
               <div className="icon-box">
                 <Mail size={24} />
               </div>
               <div>
                 <h3>Email Us</h3>
-                <p><a href="mailto:gokulv508g@gmail.com" style={{ color: '#aaa', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseEnter={(e) => e.target.style.color = 'var(--gold-primary)'} onMouseLeave={(e) => e.target.style.color = '#aaa'}>gokulv508g@gmail.com</a></p>
+                <p>gokulv508g@gmail.com</p>
               </div>
-            </div>
+            </a>
 
             <div className="info-card">
               <div className="icon-box">
@@ -91,12 +91,14 @@ const Contact = () => {
           align-items: center;
           gap: 20px;
           border: 1px solid rgba(255, 255, 255, 0.05);
-          transition: transform 0.3s ease, border-color 0.3s ease;
+          transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+          cursor: pointer;
         }
 
         .info-card:hover {
           transform: translateY(-5px);
           border-color: var(--gold-primary);
+          background: rgba(255, 255, 255, 0.05);
         }
 
         .icon-box {
