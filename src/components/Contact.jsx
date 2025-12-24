@@ -18,7 +18,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3>Call Us</h3>
-                <p>+91 73065 93906</p>
+                <p><a href="tel:+917306593906" style={{ color: '#aaa', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseEnter={(e) => e.target.style.color = 'var(--gold-primary)'} onMouseLeave={(e) => e.target.style.color = '#aaa'}>+91 73065 93906</a></p>
               </div>
             </div>
 
@@ -28,7 +28,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3>Email Us</h3>
-                <p>gokulv508g@gmail.com</p>
+                <p><a href="mailto:gokulv508g@gmail.com" style={{ color: '#aaa', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseEnter={(e) => e.target.style.color = 'var(--gold-primary)'} onMouseLeave={(e) => e.target.style.color = '#aaa'}>gokulv508g@gmail.com</a></p>
               </div>
             </div>
 
